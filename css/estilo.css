@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    background-color: #3d3a3a;
+}
+/* utilitários */
+.u-box {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 , h2 {font-family: 'Kiwi Maru', serif;}
+p , span {font-family: 'Source Sans Pro', sans-serif}
+
+/* 
+    header_main 
+*/
+
+.header_main {
+    background-color: #7a817f; 
+    padding: 20px 0;
+}
+
+.header_main .u-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_main__logo_01 {
+    width: 10rem;
+    height: 4rem;
+}
+
+.header_main__logo_02 {
+    width: 13rem;
+    height: 3rem;
+}
+
+/* 
+    hero 
+*/
+
+.hero .u-box {
+    display: flex;
+    justify-content: right;
+}
+.hero__bg {
+    background: #2b2929 url('../assets/bg-form.jpg')center no-repeat;
+    background-size: cover;
+    height: 85vh;
+}
+
+.hero__box_form {
+    max-width: 26rem;
+    height: 105%;
+    transform: translateY(-2.5%);
+    margin-right: 3rem;
+    background-color: #9b929299;
+    box-shadow: 2px 1px 5px  #a7aaa3;
+    border-radius: 5px;
+}
+
+.hero__titulo {
+    padding: 1rem;
+    color: #e6e1d6; 
+    font-size: 20pt;
+    font-weight: 300;
+    background-color: #67694f; 
+    border-radius: 5px;
+}
+
+.hero__form {padding: 2rem;}
+
+.hero__input:not(:first-child) {margin-top: 2rem;}
+.hero__titulo_input {
+    display: block;
+    font-size: 13pt;
+    font-style: oblique;
+    color: #2f3029;
+    text-transform: uppercase;
+}
+
+.hero input {
+    width: 100%;
+    height: 3rem;
+    padding: 0 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 15pt;
+    color: #313030;
+}
+
+.hero__input_submit {
+    margin-top: 3rem;
+    box-shadow: 1px 2px 5px rgb(14, 13, 13);
+}
+
+.hero input[type='submit'] {
+    height: 4rem;
+    border-radius: 5px;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 20pt;
+}
+.hero input[type='submit']:hover {
+   animation: enviou 2s ease 0s 1;
+}
+
+.hero__input_texto {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.hero__texto {
+    font-size: 16pt;
+    color: #2f2d2d; 
+    font-style: oblique;
+}
+
+/*
+   chamada
+*/
+
+.chamada .u-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #474749;
+}
+
+.chamada__icon {
+    font-size: 60pt;
+    color: #a09d8a;
+    transform: translateY(-4.5rem);
+    animation: icon 2s ease 0s infinite;
+}
+.chamada__icon i {text-shadow: 2px 2px 5px #101110;}
+
+.chamada__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-3rem); 
+}
+
+.chamada__titulo {
+    width: 100%;
+    font-size: 30pt;
+    text-align: center;
+    color: #ffffff;
+}
+
+.chamada__texto {
+    width: 65%;
+    font-size: 17pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    color: #ff6347;
+    font-family: 'Kiwi Maru', serif;
+}
+
+/*
+   keyframe
+*/
+
+@keyframes enviou {
+    from {font-size: 20pt;}
+    50%  {font-size: 16pt;}
+    80%  {font-size: 25pt;}
+    to   {font-size: 20pt;}
+}
+
+@keyframes icon {
+    from {transform: translateY(-4.5rem);}
+    50%  {transform: translateY(-5rem);}
+    to   {transform: translateY(-4.5rem);}
+}
+
+/* 
+    medias 
+*/
+
+@media screen and (max-width: 1100px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 520px) {
+    /* header_main */
+    
+    .header_main .u-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header_main__logo_02 { margin-top: 2rem;}
+}
+
