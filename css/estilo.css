@@ -272,12 +272,12 @@ p , span {font-family: 'Source Sans Pro', sans-serif}
 
     .mosaico__img {
         width: 100%;
-        padding-top: 20rem;
+        padding-top: 23rem;
     }
 
     .mosaico__texto {
         width: 100%;
-        padding: 60px 40px;
+        padding: 40px;
     }
     
 }
